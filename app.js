@@ -13,7 +13,7 @@ searchUser.addEventListener('keyup', (e) => {
 
     if(userText !== '') {
         // fetch user ie make http call here
-        github.getUser(userText).then(data => {
+        github.getUserAndRepos(userText).then(data => {
             console.log(data);
 
             if(data.profile.message == 'Not Found') {
@@ -22,6 +22,7 @@ searchUser.addEventListener('keyup', (e) => {
             } else {
                 // profile display code
                 ui.showProfile(data.profile);
+                ui.showRepos(data.repos);
             }
         })
 

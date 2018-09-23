@@ -1,5 +1,5 @@
 // initize github obj
-GitHub github = new GitHub();
+GitHub github = new GitHub;
 
 // also initize ui obj
 UI ui = new UI;

@@ -1,8 +1,8 @@
 // initize github obj
-GitHub github = new GitHub;
+const github = new GitHub;
 
 // also initize ui obj
-UI ui = new UI;
+const ui = new UI;
 // search input
 const searchUser = document.getElementById('searchUser');
 

@@ -5,8 +5,8 @@ class UI {
 
     // resultant github information to user
     showProfile(user) {
-        console.log(user);
 
+        // list html from javascript
         this.profile.innerHTML = `
         
         <div class="card border-primary mb-3">
